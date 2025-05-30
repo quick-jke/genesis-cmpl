@@ -1,0 +1,10 @@
+import "book.def"
+import "user.def"
+
+table Order {
+    PRIMARY int id;
+    User user;
+    string date;
+    array Book books;
+    string total_price;
+}

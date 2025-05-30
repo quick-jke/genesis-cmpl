@@ -1,0 +1,1 @@
+genesis --def_path=examples/library --cpp_out=library

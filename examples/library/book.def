@@ -1,0 +1,12 @@
+import "author.def" 
+import "publisher.def" 
+
+table Book{
+    primary int id;
+    string title;
+    array Author authors;
+    Publisher publisher;
+    bool is_bn;
+    string publication_date;
+    string price;
+}

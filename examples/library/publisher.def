@@ -1,0 +1,5 @@
+table Publisher{
+    PRIMARY int id;
+    string name;
+    string adress;
+}

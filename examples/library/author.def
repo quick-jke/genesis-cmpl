@@ -1,0 +1,7 @@
+import "book.def"
+
+table Author{
+    PRIMARY int id;
+    string name;
+    array Book books;
+}

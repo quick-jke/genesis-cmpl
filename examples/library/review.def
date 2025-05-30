@@ -1,0 +1,10 @@
+import "user.def"
+import "book.def"
+
+table Review{
+    PRIMARY int id;
+    Book book;
+    User user;
+    double rating;
+    string comment;
+}
