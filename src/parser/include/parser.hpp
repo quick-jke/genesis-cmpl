@@ -8,7 +8,6 @@ namespace genesis{
 
 class Parser{
 public:
-    
     static const AST parse(const std::string& content);
 };
 

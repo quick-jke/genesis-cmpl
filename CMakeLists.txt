@@ -6,6 +6,7 @@ add_subdirectory(src/parser)
 add_subdirectory(src/ast)
 add_subdirectory(src/codegen)
 add_subdirectory(src/utils)
+add_subdirectory(src/moc)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
