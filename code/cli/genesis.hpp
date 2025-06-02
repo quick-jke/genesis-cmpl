@@ -30,4 +30,4 @@ config get_cmd_path(int argc, char* argv[]){
 
 #endif
 
-// genesis --def_path=../examples/library --cpp_out=library
+// ./genesis --def_path=../examples/library --cpp_out=library

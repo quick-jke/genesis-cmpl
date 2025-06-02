@@ -5,8 +5,8 @@ namespace quick{
 namespace genesis{
     
 
-AST::AST(const std::string& content) : content_(content){
-    cls = MocClass();
+AST::AST(const std::vector<MocClass>& classes) : classes_(classes){
+    
 }
 
 std::string AST::content(){
@@ -15,7 +15,9 @@ std::string AST::content(){
 
 void AST::write_to(std::ofstream& file){
     file << "/*\n";
-    cls.write_to(file);
+    for(auto cls : classes_){
+        cls.write_to(file);
+    }
     file << "\n*/";
 }
 

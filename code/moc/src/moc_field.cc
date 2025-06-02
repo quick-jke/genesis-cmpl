@@ -4,11 +4,11 @@
 namespace quick{
 namespace genesis{
 
-MocField::MocField(){
+MocField::MocField(const std::string& field) : field_(field){
 
 }
 void MocField::write_to(std::ofstream& file){
-    file << "writing field\n"; 
+    file << "\t" << field_ << std::endl; 
 }
 
 }

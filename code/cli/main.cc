@@ -13,7 +13,7 @@ public:
     Compiler(const config& config) : config_(config) {}
 
     void run() {
-        std::cout << config_.out_path << std::endl;
+        // std::cout << config_.out_path << std::endl;
         if (std::filesystem::exists(config_.out_path)) {
             std::filesystem::remove_all(config_.out_path); 
         }
@@ -26,7 +26,7 @@ public:
         }
         int i = 0;
         for (const auto& file_path : def_files) {
-            std::cout << file_path << std::endl;
+            // std::cout << file_path << std::endl;
             try {
                 process_file(file_path, file_path.stem());
                 ++i;
@@ -68,8 +68,6 @@ int main(int argc, char* argv[]){
         
         Compiler compiler(config);
         compiler.run();
-
-        std::cout << "Compilation completed successfully." << std::endl;
 
         return 0;
 
